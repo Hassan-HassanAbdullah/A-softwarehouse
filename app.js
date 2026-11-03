@@ -127,19 +127,57 @@ function initHero() {
 
   if (heroRightCard) {
     heroRightCard.innerHTML = `
-      <div class="hero-indicator-top">
-        <span class="hero-step-num">01 / HUB</span>
-        <span class="hero-live-badge"><span class="pulse-dot"></span> ONLINE</span>
+      <div class="console-topbar">
+        <div class="console-dots">
+          <span class="console-dot dot-red"></span>
+          <span class="console-dot dot-yellow"></span>
+          <span class="console-dot dot-green"></span>
+        </div>
+        <div class="console-title">A++ CORE // POS & ERP SUITE</div>
+        <div class="console-status-pill">
+          <span class="pulse-dot"></span> 99.98% UPTIME
+        </div>
       </div>
-      <h3 class="hero-indicator-title">Mandi Bahauddin HQ</h3>
-      <p class="hero-indicator-text">
-        Phalia Road, Punjab Center. Providing custom POS software, institutional ERPs, web systems & mobile solutions.
-      </p>
-      <div class="hero-indicator-pills">
-        <span class="tech-mini-pill">Retail POS</span>
-        <span class="tech-mini-pill">College ERP</span>
-        <span class="tech-mini-pill">Pharmacy POS</span>
-        <span class="tech-mini-pill">Wholesale ERP</span>
+
+      <div class="console-body">
+        <div class="console-system-item" onclick="selectServiceInForm('Point of Sale (POS) Software')">
+          <div class="console-system-left">
+            <span class="console-system-name">Supermarket & Retail POS</span>
+            <span class="console-system-desc">0.08s Barcode Billing &bull; Thermal Printing</span>
+          </div>
+          <span class="console-system-badge">Retail POS</span>
+        </div>
+
+        <div class="console-system-item" onclick="selectServiceInForm('Institutional & College ERP')">
+          <div class="console-system-left">
+            <span class="console-system-name">Institutional & College ERP</span>
+            <span class="console-system-desc">Library Records &bull; Student / Staff Ledgers</span>
+          </div>
+          <span class="console-system-badge">College ERP</span>
+        </div>
+
+        <div class="console-system-item" onclick="selectServiceInForm('Pharmacy & Medical POS ERP')">
+          <div class="console-system-left">
+            <span class="console-system-name">Pharmacy & Medical ERP</span>
+            <span class="console-system-desc">Batch Expiry Alerts &bull; Formula Lookup</span>
+          </div>
+          <span class="console-system-badge">Medical POS</span>
+        </div>
+
+        <div class="console-system-item" onclick="selectServiceInForm('Wholesale & Distribution ERP')">
+          <div class="console-system-left">
+            <span class="console-system-name">Wholesale & Distribution Suite</span>
+            <span class="console-system-desc">Multi-Warehouse &bull; Party Credit Ledgers</span>
+          </div>
+          <span class="console-system-badge">Supply ERP</span>
+        </div>
+      </div>
+
+      <div class="console-footer-cta">
+        <span class="console-cta-text">On-site setup in Mandi Bahauddin</span>
+        <a href="#contact" class="console-cta-btn" onclick="selectServiceInForm('Point of Sale (POS) Software')">
+          <span>Schedule Demo</span> &rarr;
+        </a>
       </div>
     `;
   }
